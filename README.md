@@ -1,5 +1,5 @@
 # Robotic Arm Project
-This project controls a robotic arm using an Arduino board and five servo motors. Potentiometers are used to control the arm's movements.
+The robotic arm replicates human hand movements using biomimicry. An Arduino microcontroller serves as the control hub, while servomotors enable precise angular motion. Designed for both industrial applications and educational use, it demonstrates key concepts in robotics and automation.
 
 ## Files
 - `robotic_arm.ino`: Arduino sketch controlling the servos based on analog input.
