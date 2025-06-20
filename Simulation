@@ -1,0 +1,60 @@
+#include <iostream>
+
+// Simulated servo class
+class Servo {
+public:
+    void attach(int pin) {
+        std::cout << "Servo attached to pin " << pin << std::endl;
+    }
+    void write(int angle) {
+        std::cout << "Servo angle set to " << angle << "°" << std::endl;
+    }
+};
+
+// Simulated analogRead (0–1023)
+int analogRead(int pin) {
+    int val;
+    std::cout << "Enter analog value for pin " << pin << " (0–1023): ";
+    std::cin >> val;
+    if (val < 0) val = 0;
+    if (val > 1023) val = 1023;
+    return val;
+}
+
+// Simulate Arduino map function
+int mapValue(int x, int in_min, int in_max, int out_min, int out_max) {
+    return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+int main() {
+    Servo servo1, servo2, servo3, servo4, servo5;
+
+    servo1.attach(9);
+    servo2.attach(10);
+    servo3.attach(11);
+    servo4.attach(5);
+    servo5.attach(6);
+
+    while (true) {
+        int val1 = analogRead(0); // Potentiometer 1
+        int val2 = analogRead(1); // Potentiometer 2
+        int val3 = analogRead(2); // Potentiometer 3
+        int val4 = analogRead(3); // Potentiometer 4
+
+        int pos1 = mapValue(val1, 0, 1023, 0, 180);
+        int pos2 = mapValue(val2, 0, 1023, 0, 90);
+        int pos3 = mapValue(val2, 0, 1023, 90, 0);
+        int pos4 = mapValue(val3, 0, 1023, 0, 180);
+        int pos5 = mapValue(val4, 0, 1023, 30, 90);
+
+        servo1.write(pos1);
+        servo2.write(pos2);
+        servo3.write(pos3);
+        servo4.write(pos4);
+        servo5.write(pos5);
+
+        std::cout << "-----------------------------\n";
+    }
+
+    return 0;
+}
