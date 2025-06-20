@@ -5,6 +5,8 @@ This project controls a robotic arm using an Arduino board and five servo motors
 ## Files
 
 - `robotic_arm.ino`: Arduino sketch controlling the servos based on analog input.
+- `Simulation`: External C++ Runners
+
 
 ## Hardware Setup
 
