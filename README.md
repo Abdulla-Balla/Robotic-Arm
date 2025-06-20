@@ -1,15 +1,12 @@
 # Robotic Arm Project
-
 This project controls a robotic arm using an Arduino board and five servo motors. Potentiometers are used to control the arm's movements.
 
 ## Files
-
 - `robotic_arm.ino`: Arduino sketch controlling the servos based on analog input.
 - `Simulation`: External C++ Runners
 
 
 ## Hardware Setup
-
 - Arduino Uno (or compatible)
 - 5 Servo motors connected to pins 9, 10, 11, 5, and 6
 - 4 Potentiometers connected to analog inputs A0, A1, A2, and A3
@@ -22,8 +19,6 @@ This project controls a robotic arm using an Arduino board and five servo motors
 5. Use the potentiometers to control the robotic arm.
 
 ## License
-MIT License
-
 Copyright (c) 2025 Abdulla Balla
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
