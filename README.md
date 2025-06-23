@@ -1,5 +1,5 @@
 # Robotic Arm Project
-The robotic arm replicates human hand movements demonstrating biomimicry. An Arduino microcontroller serves as the control hub, while servomotors enable precise angular motion. Designed for both industrial applications and educational use, it demonstrates key concepts in robotics and automation.
+The robotic arm replicates human hand movements demonstrating biomimicry. An Arduino microcontroller serves as the control hub, while servomotors enable precise angular motion controlled by potentiometers. Designed for both industrial applications and educational use, it demonstrates key concepts in robotics and automation.
 
 ## Files
 - `robotic_arm.ino`: Arduino sketch controlling the servos based on analog input.
@@ -12,11 +12,11 @@ The robotic arm replicates human hand movements demonstrating biomimicry. An Ard
 - 4 Potentiometers connected to analog inputs A0, A1, A2, and A3
 
 ## Usage
-1. Open the Arduino IDE.
+1. Open the Arduino software.
 2. Load `robotic_arm.ino`.
-3. Connect your Arduino to your computer.
-4. Upload the sketch.
-5. Use the potentiometers to control the robotic arm.
+3. Connect your Arduino and parts in correspodance to the sketch.
+4. Upload the code to your computer.
+5. Everything is ready =)
 
 ## License
 Copyright (c) 2025 Abdulla Balla
