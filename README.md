@@ -14,7 +14,7 @@ The robotic arm replicates human hand movements demonstrating biomimicry. An Ard
 ## Usage
 1. Open the Arduino software.
 2. Load `robotic_arm.ino`.
-3. Connect your Arduino and parts in correspodance to the sketch.
+3. Connect your Arduino and parts in correspodance to `Schematic Sketch`.
 4. Upload the code to your computer.
 5. Everything is ready =)
 
